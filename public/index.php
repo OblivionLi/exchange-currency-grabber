@@ -23,6 +23,8 @@ if (is_post_request()) {
             confirm_query_result($result);
         }
     }
+    
+    header('Location: index.php');
 }
 
 ?>
@@ -38,6 +40,7 @@ if (is_post_request()) {
             ?>
         </small>
         <p><small>Currency data changes every day at 13:00 (GMT+2 Romania time)</small></p>
+        <p><small>Grabs data from https://www.bnr.ro/nbrfxrates.xml</small></p>
     </div>
 
     <div class="actions">
